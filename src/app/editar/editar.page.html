@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-title class="ion-text-center">Editar Cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input type="text" [(ngModel)]="cliente.nomeCli" required>
+</ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Cpf</ion-label>
+    <ion-textarea [(ngModel)]="cliente.cpfCli" required>
+</ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-textarea [(ngModel)]="cliente.telCli" required>
+</ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Data</ion-label>
+    <ion-textarea [(ngModel)]="cliente.dataCadastro" required>
+</ion-textarea>
+  </ion-item>
+ 
+ 
+
+  <ion-button class="ion-padding"
+color="primary" expand="full" (click)="updateCli(cliente)">
+Editar</ion-button>
+</ion-content>
